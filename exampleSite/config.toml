@@ -1,32 +1,27 @@
 baseURL = "https://github.com/rcjach/hugo-webslides.git"
-languageCode = "en-us"
-title = "A Hugo theme for creating Webslides.js presentations"
 disableKinds = ["sitemap", "RSS"]
+features = ["webslides.js", "pre-made template", "shortcodes"]
+languageCode = "en-us"
+tags = ["slide", "presentation", "responsive", "landing page"]
 theme = "hugo-webslides"
 themesDir = "../.."
-tags = ["slide", "presentation", "responsive", "landing page"]
-features = ["webslides.js", "pre-made template", "shortcodes"]
-
-[params]
-  author = "RCJacH"
-  homepage = "RCJacH.github.io"
-
-
-[params.webslides]
-  banner = false
-  slideshow = true
-  vertical = false
-  autoslide = false
-  changeOnClick = false
-  disableLoop = false
-  minWheelDelta = 40
-  disableNavigateOnScroll = false
-  scrollWait = 450
-  slideOffset = 50
-  hideIndex = false
-
+title = "A Hugo theme for creating Webslides.js presentations"
 [markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-    unsafe = true
+defaultMarkdownHandler = "blackfriday"
+[markup.goldmark.renderer]
+unsafe = true
+[params]
+author = "RCJacH"
+homepage = "RCJacH.github.io"
+[params.webslides]
+autoslide = false
+banner = false
+changeOnClick = false
+disableLoop = false
+disableNavigateOnScroll = false
+hideIndex = false
+minWheelDelta = 40
+scrollWait = 450
+slideOffset = 50
+slideshow = true
+vertical = false
