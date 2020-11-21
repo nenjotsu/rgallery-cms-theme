@@ -4,8 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: heading
+- type: directory
+  path: exhibits/content
   label: Exhibits
+  create: all
+  match: "*"
 - type: directory
   path: exampleSite/content
   label: Pages
